@@ -1,5 +1,6 @@
 Tree Kill
 =========
+![tests](https://github.com/nichoth/tree-kill/actions/workflows/nodejs.yml/badge.svg)
 [![Socket Badge](https://socket.dev/api/badge/npm/package/@nichoth/tree-kill)](https://socket.dev/npm/package/@nichoth/tree-kill)
 [![types](https://img.shields.io/npm/types/@nichoth/tree-kill)](README.md)
 [![dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen)](package.json)
