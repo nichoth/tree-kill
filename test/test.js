@@ -1,6 +1,6 @@
 var assert = require('assert');
 var fork = require('child_process').fork;
-var kill = require('..');
+var kill = require('../');
 
 describe('kill()', function(){
     it('should kill a process', function(done){ 
