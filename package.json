@@ -8,7 +8,8 @@
     "tree-kill": "cli.js"
   },
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "postversion": "git push && git push --tags && npm publish"
   },
   "dependencies": {},
   "devDependencies": {},
