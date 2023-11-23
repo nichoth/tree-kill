@@ -15,9 +15,9 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git://github.com/pkrumins/node-tree-kill.git"
+    "url": "git://github.com/nichoth/tree-kill.git"
   },
-  "homepage": "https://github.com/pkrumins/node-tree-kill",
+  "homepage": "https://github.com/nichoth/tree-kill",
   "keywords": [
     "tree",
     "trees",
