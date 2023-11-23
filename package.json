@@ -8,11 +8,10 @@
     "tree-kill": "cli.js"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "node test/test.js"
   },
-  "devDependencies": {
-    "mocha": "^2.2.5"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/pkrumins/node-tree-kill.git"

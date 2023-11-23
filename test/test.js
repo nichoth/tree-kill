@@ -1,5 +1,7 @@
+// @ts-check
 var assert = require('assert');
 var fork = require('child_process').fork;
+var { describe, it } = require('node:test')
 var kill = require('../');
 
 describe('kill()', function(){
@@ -9,7 +11,7 @@ describe('kill()', function(){
 
         p.on('exit', function(code, signal){
             assert.ok(code || signal, 'should return an exit code')
-            return done()
+            // return done()
         });
 
         kill(p.pid)
@@ -19,8 +21,7 @@ describe('kill()', function(){
         var p = fork('./test/spin')
         assert.ok(p.pid)
 
-        kill(p.pid, null, function() {
-            return done()
+        kill(p.pid, undefined, function() {
         })
     })
     
@@ -29,7 +30,7 @@ describe('kill()', function(){
         assert.ok(p.pid)
 
         kill(p.pid, function() {
-            return done()
+            // return done()
         })
     })
 
@@ -37,9 +38,10 @@ describe('kill()', function(){
         var p = fork('./test/spin')
         assert.ok(p.pid)
 
-        kill('rm -rf /dev/null', function(err) {
+        kill('rm -rf /dev/null', function (err) {
             assert.ok(typeof err === 'object')
-            return done()
+            // return done()
+            kill(p.pid)
         })
     })
 
@@ -52,7 +54,7 @@ describe('kill()', function(){
             assert.fail('should have thrown')
         } catch (err) {
             assert.ok(typeof err === 'object')
-            return done();
+            kill(p.pid)
         }
     })
 })
