@@ -1,5 +1,5 @@
 {
-  "name": "tree-kill",
+  "name": "@nichoth/tree-kill",
   "version": "1.2.2",
   "description": "kill trees of processes",
   "main": "index.js",
@@ -9,6 +9,9 @@
   },
   "scripts": {
     "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
   },
   "repository": {
     "type": "git",
@@ -30,6 +33,11 @@
   },
   "contributors": [
     {
+      "name": "Nick Thomas",
+      "email": "nichoth@nichoth.com",
+      "url": "https://nichoth.com"
+    },
+    {
       "name": "Todd Wolfson",
       "email": "todd@twolfson.com",
       "url": "http://twolfson.com/"
@@ -44,8 +52,5 @@
       "url": "http://ultcombo.js.org/"
     }
   ],
-  "license": "MIT",
-  "devDependencies": {
-    "mocha": "^2.2.5"
-  }
+  "license": "MIT"
 }

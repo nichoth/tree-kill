@@ -11,6 +11,7 @@ describe('kill()', function(){
             assert.ok(code || signal, 'should return an exit code')
             return done()
         });
+
         kill(p.pid)
     })
 

@@ -1,7 +1,20 @@
 Tree Kill
 =========
+[![Socket Badge](https://socket.dev/api/badge/npm/package/@nichoth/tree-kill)](https://socket.dev/npm/package/@nichoth/tree-kill)
+[![types](https://img.shields.io/npm/types/@nichoth/tree-kill)](README.md)
+[![license](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE)
 
 Kill all processes in the process tree, including the root process.
+
+fork
+====
+A fork of [pkrumins/node-tree-kill](https://github.com/pkrumins/node-tree-kill)
+
+Install
+=======
+```sh
+npm install @nichoth/tree-kill
+```
 
 Examples
 =======
@@ -45,15 +58,6 @@ For Linux, this uses `ps -o pid --no-headers --ppid PID` to find the parent pids
 For Darwin/OSX, this uses `pgrep -P PID` to find the parent pids of `PID`.
 
 For Windows, this uses `'taskkill /pid PID /T /F'` to kill the process tree. Note that on Windows, sending the different kinds of POSIX signals is not possible.
-
-Install
-=======
-
-With [npm](https://npmjs.org) do:
-
-```
-npm install tree-kill
-```
 
 License
 =======
